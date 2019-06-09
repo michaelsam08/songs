@@ -1,16 +1,25 @@
 .App {
   text-align: center;
 }
+#loginDesign {
+  /* background-image: url("./images/loopwriter.JPG.jpg"); */
+  background-color: plum;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 750px;
+}
+
 #wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #663399;
+  background-image: url("./images/loopwriter.JPG.jpg");
   height: 800px;
   width: 100%;
 }
-.createQuestion wrapper {
+.createQuestion {
   display: flex;
   flex-direction: row;
   justify-content: center;

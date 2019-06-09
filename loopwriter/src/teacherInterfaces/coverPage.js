@@ -49,11 +49,11 @@ class CoverPage extends Component {
       // name: "hai"
     };
   }
-  componentDidMount() {
+  componentDidMount = () => {
     fetch("/users")
       .then(res => res.json())
       .then(response => {});
-  }
+  };
 
   handleChange = event => {
     debugger;

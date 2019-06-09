@@ -39,7 +39,7 @@ class Login extends Component {
     return this.state.authenticated ? (
       <App />
     ) : (
-      <div>
+      <div id="loginDesign">
         <label htmlFor="firstName">First Name</label>
         <input
           name="firstName"
