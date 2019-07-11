@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import TopAppBar from "./components/TopAppBar";
-import Home from "./components/Home";
+import Cards from "./components/Cards";
 import Routes from "./components/Routes";
 
 import AboutMe from "./components/AboutMe";
 import Resume from "./components/Resume";
 import Error from "./components/Error";
-import Navigation from "./components/Navigation";
+import SideNav from "./components/SideNav";
 import { stat } from "fs";
 
 const useStyles = makeStyles(theme => ({
@@ -29,11 +29,11 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className>
         <TopAppBar />
         <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
           <Routes />
-          <Home />
+          <Cards />
         </div>
         {/* <BrowserRouter>
           <div>

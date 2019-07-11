@@ -7,18 +7,22 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { border } from "@material-ui/system";
 
+import Iguana from "../images/Iguana.JPG";
+
 const useStyles = makeStyles({
   root: {
     display: "flex",
     flexDirection: "column",
-
-    width: "80%"
+    width: "70%"
   },
   card: {
     justifyContent: "flex-start",
     width: "auto",
     minHeight: 275,
     border: "5px dotted purple"
+  },
+  pic: {
+    height: 275
   },
   bullet: {
     display: "inline-block",
@@ -71,10 +75,6 @@ export default function Cards() {
             STUFF
           </Typography>
         </CardContent>
-
-        {/* <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions> */}
       </Card>
       <Card className={classes.card}>
         <CardContent>
@@ -85,13 +85,7 @@ export default function Cards() {
           >
             Word of the Day
           </Typography>
-          <Typography variant="h5" component="h2">
-            be
-            {bull}
-            nev
-            {bull}o{bull}
-            lent
-          </Typography>
+          <img src={Iguana} className={classes.pic} alt="" />
           <Typography className={classes.pos} color="textSecondary">
             adjective
           </Typography>
@@ -101,9 +95,6 @@ export default function Cards() {
             {'"a benevolent smile"'}
           </Typography>
         </CardContent>
-        {/* <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
       </Card>
     </div>
   );

@@ -6,16 +6,15 @@ const useStyles = makeStyles({
   root: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    width: "100%"
+    justifyItems: "start",
+    height: "100%"
   },
   button: {
-    width: "100%",
     minHeight: 25,
     border: "2px solid green"
   }
 });
-const Navigation = () => {
+const SideNav = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -34,4 +33,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default SideNav;
