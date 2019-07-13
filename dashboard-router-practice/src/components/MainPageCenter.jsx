@@ -4,33 +4,34 @@ import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 
-class App extends React.Component {
-  state = { videos: [], selectedVideo: null };
+class MainPageCenter extends React.Component {
+  // state = { videos: [], selectedVideo: null };
 
-  componentDidMount() {
-    this.onTermSubmit("buildings");
-  }
+  // componentDidMount() {
+  //   this.onTermSubmit("buildings");
+  // }
 
-  onTermSubmit = async term => {
-    const response = await youtube.get("/search", {
-      params: {
-        q: term
-      }
-    });
-    // response.data.items;
-    this.setState({
-      videos: response.data.items,
-      selectedVideo: response.data.items[0]
-    });
-  };
-  onVideoSelect = video => {
-    this.setState({ selectedVideo: video });
-  };
+  // onTermSubmit = async term => {
+  //   const response = await youtube.get("/search", {
+  //     params: {
+  //       q: term
+  //     }
+  //   });
+  //   // response.data.items;
+  //   this.setState({
+  //     videos: response.data.items,
+  //     selectedVideo: response.data.items[0]
+  //   });
+  // };
+  // onVideoSelect = video => {
+  //   this.setState({ selectedVideo: video });
+  // };
 
   render() {
     return (
       <div className="ui container">
-        <Searchbar onFormSubmit={this.onTermSubmit} />
+        {"What up crackaas"}
+        {/* <Searchbar onFormSubmit={this.onTermSubmit} />
         <div className="ui grid">
           <div className="ui row">
             <div className="eleven wide column">
@@ -44,9 +45,9 @@ class App extends React.Component {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
 }
-export default App;
+export default MainPageCenter;
