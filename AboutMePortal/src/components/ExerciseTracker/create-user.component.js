@@ -36,6 +36,7 @@ export default class CreateUser extends Component {
     this.setState({
       username: ""
     });
+    alert("New User Added!");
   }
 
   render() {
