@@ -1,34 +1,29 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { flexbox } from "@material-ui/system";
 
 const nav = {
   display: "flex",
-  flexDirection: "row"
+  flexDirection: "row",
+  justifyContent: "space-around",
+  padding: 10,
+  border: "2px solid black",
+  paddingLeft: -100
 };
 
 export default class Navbar extends Component {
   render() {
     return (
-      <div>
-        <Link to="/">Home</Link>
-        <nav style={nav}>
-          ExcerTracker
-          <div className="collpase navbar-collapse">
-            <ul className="navbar-nav mr-auto">
-              <li className="navbar-item">
-                <Link to="/create" className="nav-link">
-                  Create Exercise Log
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="/user" className="nav-link">
-                  Create User
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div className="App">
+        <h1>Excercise Tracker</h1>
+        <div style={nav}>
+          <Link to="/">Home</Link>
+          <Link to="/create" className="nav-link">
+            Create Exercise Log
+          </Link>
+          <Link to="/user" className="nav-link">
+            Create User
+          </Link>
+        </div>
       </div>
     );
   }

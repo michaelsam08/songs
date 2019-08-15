@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./navbar.component";
 
+const container = {
+  display: "flex",
+  justifyContent: "space-between",
+  flexDirection: "column"
+};
+const tableInfo = {
+  display: "flex",
+  justifyContent: "center"
+};
 const Exercise = props => (
   <tr>
     <td>{props.exercise.username}</td>
@@ -69,19 +78,21 @@ export default class ExercisesList extends Component {
     return (
       <div>
         <Navbar />
-        <h3>Logged Exercises</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Username</th>
-              <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>{this.exerciseList()}</tbody>
-        </table>
+        <div style={container}>
+          <h3>Logged Exercises</h3>
+          <table style={tableInfo}>
+            <thead className="thead-light">
+              <tr>
+                <th>Username</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Date</th>
+                <th>Actions</th>
+              </tr>
+              <tbody>{this.exerciseList()}</tbody>
+            </thead>
+          </table>
+        </div>
       </div>
     );
   }
