@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/michaelsam08/AboutMePortal/static/css/main.2cce8147.chunk.css",
+    "main.js": "/michaelsam08/AboutMePortal/static/js/main.d4a0cac2.chunk.js",
+    "main.js.map": "/michaelsam08/AboutMePortal/static/js/main.d4a0cac2.chunk.js.map",
+    "runtime~main.js": "/michaelsam08/AboutMePortal/static/js/runtime~main.5562ba8f.js",
+    "runtime~main.js.map": "/michaelsam08/AboutMePortal/static/js/runtime~main.5562ba8f.js.map",
+    "static/css/2.cc034990.chunk.css": "/michaelsam08/AboutMePortal/static/css/2.cc034990.chunk.css",
+    "static/js/2.14a9720f.chunk.js": "/michaelsam08/AboutMePortal/static/js/2.14a9720f.chunk.js",
+    "static/js/2.14a9720f.chunk.js.map": "/michaelsam08/AboutMePortal/static/js/2.14a9720f.chunk.js.map",
+    "index.html": "/michaelsam08/AboutMePortal/index.html",
+    "precache-manifest.0bd9428ba08b84e8ef8cd6d67355e809.js": "/michaelsam08/AboutMePortal/precache-manifest.0bd9428ba08b84e8ef8cd6d67355e809.js",
+    "service-worker.js": "/michaelsam08/AboutMePortal/service-worker.js",
+    "static/css/2.cc034990.chunk.css.map": "/michaelsam08/AboutMePortal/static/css/2.cc034990.chunk.css.map",
+    "static/css/main.2cce8147.chunk.css.map": "/michaelsam08/AboutMePortal/static/css/main.2cce8147.chunk.css.map",
+    "static/media/Peru.jpg": "/michaelsam08/AboutMePortal/static/media/Peru.714fa24b.jpg",
+    "static/media/cartagena1.jpg": "/michaelsam08/AboutMePortal/static/media/cartagena1.5a7a0b5a.jpg",
+    "static/media/kimsFinca.jpg": "/michaelsam08/AboutMePortal/static/media/kimsFinca.02c548eb.jpg",
+    "static/media/myBike.jpg": "/michaelsam08/AboutMePortal/static/media/myBike.5590f57d.jpg",
+    "static/media/picasso.jpg": "/michaelsam08/AboutMePortal/static/media/picasso.3ac23b17.jpg"
+  }
+}
