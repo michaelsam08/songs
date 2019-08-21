@@ -3,15 +3,14 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 /////////  Weather Tracker Componenets /////////
-import Titles from "../components/WeatherFinder/Titles";
 import Form from "../components/WeatherFinder/Form";
+import Titles from "../components/WeatherFinder/Titles";
+import TopNav from "../components/TopNav";
 import Weather from "../components/WeatherFinder/Weather";
 
-import TopNav from "../components/TopNav";
-
 import cartagena1 from "../assets/cartagena1.jpg";
-
-//import { url } from "inspector";
+import { FiUser } from "react-icons/fi";
+import { FaUserTie } from "react-icons/fa";
 
 const ContainerStyle = {
   display: "flex",
@@ -23,19 +22,22 @@ const ContainerStyle = {
 const SideNavStuff = {
   display: "flex",
   flexDirection: "column",
-  border: "15px solid green",
+  border: "15px solid white",
   width: "20%",
   backgroundColor: "#2d6cfd ",
   justifyContent: "space-around"
 };
 const buttons = {
-  backgroundColor: "grey"
+  backgroundColor: "white",
+  borderRadius: "30%",
+  fontColor: "black",
+  fontSize: "24px"
 };
 const MainPageStuff = {
   display: "flex",
   flexDirection: "column",
   color: "blue",
-  border: "15px solid pink",
+  border: "15px solid white",
   width: "80%",
   backgroundImage: `url(${cartagena1})`
 };
@@ -90,13 +92,20 @@ class MainPage extends React.Component {
           <div style={SideNavStuff}>
             <button style={buttons}>
               {" "}
-              <Link to="/AboutMe">About Me</Link>
+              <Link to="/AboutMe">
+                <FiUser />
+                {/* <h2>About Me</h2> */}
+              </Link>
             </button>
             <button style={buttons}>
-              <Link to="/Resume">Resume</Link>
+              <Link to="/Resume">
+                <FaUserTie />
+              </Link>
             </button>
             <button style={buttons}>
-              <Link to="/ExerciseTracker">Exercise Tracker</Link>
+              <Link to="/ExerciseTracker">
+                <p>Server/Db table data</p>
+              </Link>
             </button>
           </div>
           <div style={MainPageStuff}>

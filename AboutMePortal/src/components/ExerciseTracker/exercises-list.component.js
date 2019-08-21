@@ -5,19 +5,35 @@ import Navbar from "./navbar.component";
 
 const container = {
   display: "flex",
-  justifyContent: "space-between",
-  flexDirection: "column"
+  justifyContent: "center",
+  flexDirection: "row"
 };
 const tableInfo = {
   display: "flex",
+  justifyContent: "flex-start",
+  border: "4px solid red"
+};
+
+const propsContainer = {
+  display: "flex",
+  border: "7px solid green",
+  justifyContent: "flex-end"
+};
+const title = {
+  display: "flex",
+  flexDirection: "row",
   justifyContent: "center"
 };
 const Exercise = props => (
-  <tr>
+  <tr style={propsContainer}>
     <td>{props.exercise.username}</td>
+    <br />
     <td>{props.exercise.description}</td>
+    <br />
     <td>{props.exercise.duration}</td>
+    <br />
     <td>{props.exercise.date.substring(0, 10)}</td>
+    <br />
     <td>
       <Link to={"/edit/" + props.exercise._id}>edit</Link> |{" "}
       <a
@@ -78,15 +94,15 @@ export default class ExercisesList extends Component {
     return (
       <div>
         <Navbar />
+        <h3 style={title}> Logged Exercises</h3>
         <div style={container}>
-          <h3>Logged Exercises</h3>
           <table style={tableInfo}>
             <thead className="thead-light">
               <tr>
                 <th>Username</th>
-                <th>Description</th>
-                <th>Duration</th>
-                <th>Date</th>
+                <th>Description </th>
+                <th>Duration </th>
+                <th>Date </th>
                 <th>Actions</th>
               </tr>
               <tbody>{this.exerciseList()}</tbody>

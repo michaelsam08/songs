@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 
 const nav = {
   display: "flex",
@@ -16,7 +17,9 @@ export default class Navbar extends Component {
       <div className="App">
         <h1>Excercise Tracker</h1>
         <div style={nav}>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <FaHome />
+          </Link>
           <Link to="/create" className="nav-link">
             Create Exercise Log
           </Link>

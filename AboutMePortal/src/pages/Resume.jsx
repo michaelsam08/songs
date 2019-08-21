@@ -1,11 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import { FaHome } from "react-icons/fa";
 
+const btnStyle = {
+  borderRadius: "15px",
+  fontSize: "35px"
+};
+const pageCont = {
+  display: "flex",
+  flexDirection: "column"
+};
 function Resume() {
   return (
-    <div className="App">
-      <Link to="/">Home</Link>
+    <div style={pageCont} className="App">
+      <Link to="/">
+        <button style={btnStyle}>
+          <FaHome />
+        </button>
+      </Link>
       <h1>About Me Professionally</h1>
       <p>
         Working with open , collaborative, smart people excites me as I am a

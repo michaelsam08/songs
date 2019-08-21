@@ -22,7 +22,7 @@ class TodoItem extends React.Component {
   };
 
   render() {
-    const { id, title } = this.props.todos;
+    const { id, title } = this.props.todo;
     return (
       <div style={this.getStyle()}>
         <p>
@@ -31,7 +31,9 @@ class TodoItem extends React.Component {
             onChange={this.props.markComplete.bind(this, id)}
           />
           {title}
-          <button style={btnStyle}>x</button>
+          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>
+            x
+          </button>
         </p>
       </div>
     );

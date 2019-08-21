@@ -6,7 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-
+import { IoIosOptions } from "react-icons/io";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -41,7 +41,7 @@ export default function TopNav() {
             onClick={handleMenu}
             color="inherit"
           >
-            <AccountCircle />
+            <IoIosOptions />
           </IconButton>
           <Menu
             id="menu-appbar"
